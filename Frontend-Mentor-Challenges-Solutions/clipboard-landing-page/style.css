@@ -1,0 +1,245 @@
+html {
+  font-family: "Bai Jamjuree";
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.row .col-1 {
+  width: 8.33%;
+}
+.row .col-2 {
+  width: 16.66%;
+}
+.row .col-3 {
+  width: 25%;
+}
+.row .col-4 {
+  width: 33.33%;
+}
+.row .col-5 {
+  width: 41.66%;
+}
+.row .col-6 {
+  width: 50%;
+}
+.row .col-7 {
+  width: 58.33%;
+}
+.row .col-8 {
+  width: 66.66%;
+}
+.row .col-9 {
+  width: 75%;
+}
+.row .col-11 {
+  width: 91.66%;
+}
+.row .col-12 {
+  width: 100%;
+}
+
+.row {
+  padding: 52px 10%;
+}
+.row .row {
+  padding: 34px 0;
+}
+.row .row .row {
+  padding: 20px 0;
+}
+.row .col-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row h1,
+.row h2,
+.row h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+.row p {
+  text-align: center;
+  margin: 0;
+  line-height: 23px;
+  padding: 0 17rem;
+  color: hsl(201, 11%, 66%);
+}
+.row a {
+  padding: 16px 16px;
+  display: inline-block;
+  color: hsl(210, 10%, 33%);
+}
+.row a i {
+  font-size: 24px;
+}
+.row a:hover {
+  cursor: pointer;
+  color: hsl(171, 66%, 44%);
+}
+.row .header {
+  margin-top: 39px;
+  padding: 0 2%;
+}
+.row .header img {
+  padding: 45px 31%;
+  width: 38%;
+  max-width: 127px;
+}
+.row .btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 38px 0;
+  justify-content: center;
+}
+.row .btn button {
+  cursor: pointer;
+  padding: 20px 55px;
+  width: 310px;
+  margin: 12px;
+  border-style: none;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2509803922);
+  font-size: 18px;
+}
+.row .btn .ios {
+  background-color: hsl(171, 66%, 44%);
+}
+.row .btn .ios:hover {
+  background-color: #7ce4d4;
+}
+.row .btn .mac {
+  background-color: hsl(233, 100%, 69%);
+}
+.row .btn .mac:hover {
+  background-color: #e0e4ff;
+}
+.row img {
+  width: 100%;
+}
+.row .col-4 {
+  padding: 15px 0;
+}
+.row .col-4 img {
+  padding: 31px 43%;
+  width: 14%;
+}
+.row .col-4 p {
+  padding: 0 5%;
+}
+
+.brands {
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.brands .col-12 {
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.brands img {
+  display: block;
+  max-width: 44%;
+  width: auto;
+  height: auto;
+  padding: 0 3% 66px;
+}
+
+.footer {
+  background-color: #f5f6f8;
+}
+.footer .logo-footer {
+  padding: 17px 0;
+  align-self: center;
+  width: 20%;
+  max-width: 60px;
+}
+.footer .col-8 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.footer .col-8 a {
+  padding: 14px 0;
+  min-width: 200px;
+}
+.footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1000px) {
+  .row .computer {
+    align-items: flex-start;
+  }
+  .row .computer img {
+    width: 135%;
+    margin-left: -35%;
+  }
+  .row .computer .col-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 21%;
+  }
+  .row .computer .col-12 p {
+    text-align: left;
+    padding: 0;
+  }
+  .brands .col-12 {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    background-image: url(./images/bg-header-mobile.png);
+  }
+  .row {
+    display: block;
+  }
+  .row .col-2,
+  .row .col-4,
+  .row .col-6,
+  .row .col-8 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .row a {
+    display: block;
+    text-align: center;
+  }
+  .row p {
+    word-spacing: -1.6px;
+    padding: 0;
+  }
+  .footer .col-8 {
+    margin-bottom: 41px;
+  }
+}/*# sourceMappingURL=style.css.map */
