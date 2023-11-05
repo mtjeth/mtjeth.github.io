@@ -1,0 +1,529 @@
+html {
+  font-family: "Ubuntu";
+}
+
+body {
+  background-color: hsl(215, 89%, 96%);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 63.06vw;
+  height: 568px;
+  margin: 12.96vh auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 0px 30px 2px hsl(229, 24%, 87%);
+}
+.container .step-dis {
+  width: 30.2%;
+  height: calc(100% - 8px);
+  background: url("./assets/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding-top: 8px;
+}
+.container .step-dis .step {
+  display: flex;
+  flex-direction: row;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 1.5px;
+  margin: 32px;
+}
+.container .step-dis .step .circle_1,
+.container .step-dis .step .circle_2,
+.container .step-dis .step .circle_3,
+.container .step-dis .step .circle_4,
+.container .step-dis .step .circle_current {
+  width: 33px;
+  height: 33px;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .step-dis .step .circle_1 p,
+.container .step-dis .step .circle_2 p,
+.container .step-dis .step .circle_3 p,
+.container .step-dis .step .circle_4 p,
+.container .step-dis .step .circle_current p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.container .step-dis .step .circle_current {
+  border: 1px solid hsl(206, 94%, 87%);
+  background-color: hsl(206, 94%, 87%);
+}
+.container .step-dis .step .circle_current p {
+  color: hsl(213, 96%, 18%);
+}
+.container .step-dis .step .step-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 16px;
+}
+.container .step-dis .step .step-circle h1 {
+  color: hsl(228, 100%, 84%);
+  margin: 0;
+  font-size: 10px;
+  font-weight: 400;
+}
+.container .step-dis .step .step-circle p {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+}
+.container .main-dis {
+  width: 68.06%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+.container .main-dis h1 {
+  color: hsl(213, 96%, 18%);
+  margin: 16px 0;
+  font-size: 28px;
+}
+.container .main-dis p {
+  margin: 0;
+  font-size: 16px;
+  color: hsl(231, 11%, 63%);
+}
+.container .main-dis .form-section {
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 4.577%;
+  width: 72.82%;
+}
+.container .main-dis .form-section form {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+}
+.container .main-dis .form-section form label {
+  color: hsl(213, 96%, 18%);
+  margin: 8px 0;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .main-dis .form-section form label:hover {
+  cursor: pointer;
+}
+.container .main-dis .form-section form label .error_txt {
+  color: hsl(354, 84%, 57%);
+  font-size: 12px;
+  font-weight: 700;
+}
+.container .main-dis .form-section form input {
+  color: hsl(213, 96%, 18%);
+  height: 46px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  padding: 0 20px;
+  border: 1px solid hsl(229, 24%, 87%);
+}
+.container .main-dis .form-section form input:hover {
+  cursor: pointer;
+  border-color: hsl(243, 100%, 62%);
+}
+.container .main-dis .form-section form h3 {
+  margin: 6px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.container .main-dis .form-section form p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.container .main-dis .form-section #step2 input[type=radio] {
+  display: none;
+}
+.container .main-dis .form-section #step2 form {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .main-dis .form-section #step2 form label {
+  margin: 0;
+  width: 30%;
+}
+.container .main-dis .form-section #step2 form label .plan-box {
+  width: 74.81%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 16px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+}
+.container .main-dis .form-section #step2 form label .plan-box:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+.container .main-dis .form-section #step2 form label .plan-box img {
+  margin: 4px 0 40px 0;
+}
+.container .main-dis .form-section #step2 form label .plan-box .yearly_discount {
+  color: hsl(213, 96%, 18%);
+}
+.container .main-dis .form-section #step2 .toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(231, 100%, 99%);
+  border-radius: 10px;
+}
+.container .main-dis .form-section #step2 .toggle h3:hover {
+  cursor: pointer;
+}
+.container .main-dis .form-section #step2 .toggle .slider {
+  margin: 24px;
+  border: 4px solid hsl(213, 96%, 18%);
+  background-color: hsl(213, 96%, 18%);
+  width: 30px;
+  height: 12px;
+  border-radius: 12px;
+  position: relative;
+}
+.container .main-dis .form-section #step2 .toggle .slider:hover {
+  cursor: pointer;
+}
+.container .main-dis .form-section #step2 .toggle .slider .dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+}
+.container .main-dis .form-section #step2 .toggle .slider #dot_yearly {
+  right: 0;
+}
+.container .main-dis .form-section #step2 .toggle .slider #dot_monthly {
+  left: 0;
+}
+.container .main-dis .form-section #step3 input[type=checkbox] {
+  display: none;
+}
+.container .main-dis .form-section #step3 h2 {
+  color: hsl(243, 100%, 62%);
+}
+.container .main-dis .form-section #step3 form {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .main-dis .form-section #step3 form label {
+  margin: 6px 0;
+  width: 100%;
+}
+.container .main-dis .form-section #step3 form label .add-box {
+  width: 92.88%;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+.container .main-dis .form-section #step3 form label .add-box:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+.container .main-dis .form-section #step3 form label .add-box .check-add {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .main-dis .form-section #step3 form label .add-box .check-add .checker {
+  height: 19px;
+  width: 19px;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 10px;
+}
+.container .main-dis .form-section #step3 form label .add-box .check-add .checker img {
+  height: 13px;
+  width: 13px;
+  margin: 3px;
+}
+.container .main-dis .form-section #step3 form label .add-box .check-add .add-on {
+  margin-left: 17px;
+}
+.container .main-dis .form-section #step4 .detail {
+  padding: 22px 24px;
+  background-color: hsl(217, 100%, 97%);
+  margin-top: 40px;
+}
+.container .main-dis .form-section #step4 .detail .main-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+.container .main-dis .form-section #step4 .detail .main-plan .main-plan-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .main-dis .form-section #step4 .detail .main-plan h4 {
+  color: hsl(213, 96%, 18%);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.container .main-dis .form-section #step4 .detail .main-plan a {
+  font-size: 16px;
+  color: hsl(231, 11%, 63%);
+  text-decoration: underline;
+  margin-top: 5px;
+}
+.container .main-dis .form-section #step4 .detail .main-plan a:hover {
+  cursor: pointer;
+  color: hsl(243, 100%, 62%);
+}
+.container .main-dis .form-section #step4 .detail .break {
+  width: 100%;
+  height: 1px;
+  background-color: hsl(231, 11%, 63%);
+}
+.container .main-dis .form-section #step4 .detail .extra {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .main-dis .form-section #step4 .detail .extra h5 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: hsl(231, 11%, 63%);
+}
+.container .main-dis .form-section #step4 .detail .extra p {
+  color: hsl(213, 96%, 18%);
+  font-size: 16px;
+}
+.container .main-dis .form-section #step4 .total {
+  padding: 22px 24px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .main-dis .form-section #step4 .total h6 {
+  color: hsl(243, 100%, 62%);
+  font-size: 18px;
+  margin: 0;
+  font-weight: 800;
+}
+.container .main-dis .form-section #step4 .total p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.container .main-dis #step5 {
+  margin-top: 29.22%;
+  width: 72.82%;
+  background-color: hsl(0, 0%, 100%);
+}
+.container .main-dis #step5 .thank_you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+.container .main-dis #step5 .thank_you p {
+  text-align: center;
+  line-height: 1.5rem;
+}
+.container .main-dis .buttons {
+  position: absolute;
+  bottom: 2.816%;
+  margin: auto;
+  width: 72.82%;
+  height: 48px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .main-dis .buttons button {
+  width: 123px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.container .main-dis .buttons button:hover {
+  cursor: pointer;
+}
+.container .main-dis .buttons #nextstep {
+  background-color: hsl(213, 96%, 18%);
+}
+.container .main-dis .buttons #nextstep:hover {
+  background-color: #03418c;
+}
+.container .main-dis .buttons #goback {
+  color: hsl(231, 11%, 63%);
+  margin-left: -20px;
+  background-color: hsl(0, 0%, 100%);
+}
+.container .main-dis .buttons #goback:hover {
+  color: hsl(213, 96%, 18%);
+}
+.container .main-dis .buttons #confirm {
+  background-color: hsl(243, 100%, 62%);
+}
+.container .main-dis .buttons #confirm:hover {
+  background-color: #7770ff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    margin-bottom: 60px;
+    height: 665px;
+  }
+  .container .step-dis {
+    background: url("./assets/bg-sidebar-mobile.svg");
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: center;
+    width: 100%;
+    min-height: 172px;
+    max-height: 80px;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container .step-dis .step {
+    max-height: 35px;
+    overflow: hidden;
+    margin: 24px 8px;
+  }
+  .container .step-dis .step .step-circle {
+    display: none;
+  }
+  .container .main-dis {
+    width: 100%;
+    background-color: hsl(215, 89%, 96%);
+    margin-bottom: 60px;
+  }
+  .container .main-dis h1 {
+    font-size: 24px;
+  }
+  .container .main-dis .form-section {
+    top: -75px;
+    position: absolute;
+    width: 78.66%;
+    padding: 16px 26px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 0px hsl(229, 24%, 87%);
+  }
+  .container .main-dis .form-section form {
+    padding: 15px 0;
+  }
+  .container .main-dis .form-section form label {
+    margin: 6px 0;
+  }
+  .container .main-dis .form-section form input {
+    height: 40px;
+  }
+  .container .main-dis .form-section form h3 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .container .main-dis .form-section #step2 p {
+    padding: 0 2px;
+  }
+  .container .main-dis .form-section #step2 form {
+    flex-direction: column;
+  }
+  .container .main-dis .form-section #step2 form label {
+    margin: 6px 0;
+    width: 100%;
+  }
+  .container .main-dis .form-section #step2 form label .plan-box {
+    width: 89.15%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container .main-dis .form-section #step2 form label .plan-box .price {
+    margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .container .main-dis .form-section #step2 form label .plan-box img {
+    margin: 0;
+  }
+  .container .main-dis .form-section #step2 .toggle h3 {
+    font-size: 16px;
+  }
+  .container .main-dis .form-section #step2 .toggle .slider {
+    margin: 5px 24px;
+  }
+  .container .main-dis .form-section #step3 .check-add p {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  .container .main-dis .form-section #step4 .detail {
+    padding: 7px 17px;
+    margin: 25px 0 0;
+  }
+  .container .main-dis .form-section #step4 .detail .main-plan {
+    margin: 13px 0;
+  }
+  .container .main-dis #step5 {
+    position: absolute;
+    top: -37%;
+    width: 78.66%;
+    padding: 80px 26px;
+  }
+  .container .main-dis .buttons {
+    bottom: 0;
+    position: fixed;
+    width: calc(100% - 32px);
+    height: 40px;
+    padding: 17px 16px;
+  }
+  .container .main-dis .buttons button {
+    width: 97px;
+  }
+  .container .main-dis .buttons button #goback {
+    margin-left: -20px;
+  }
+  .attribution {
+    position: absolute;
+    z-index: 10;
+  }
+}/*# sourceMappingURL=style.css.map */
