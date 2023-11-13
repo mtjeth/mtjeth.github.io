@@ -135,6 +135,7 @@ ul li {
 }
 ul li:hover {
   border-color: gray;
+  cursor: pointer;
 }
 
 .container {
@@ -382,6 +383,9 @@ html {
   border-radius: 250px;
   z-index: -1;
   transition: all 0.5s;
+}
+.home .button-home:hover button {
+  cursor: pointer;
 }
 .home .button-home:hover .button-home-back {
   margin-top: -88px;

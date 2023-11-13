@@ -135,6 +135,7 @@ ul li {
 }
 ul li:hover {
   border-color: gray;
+  cursor: pointer;
 }
 
 .container {
@@ -376,6 +377,7 @@ html {
 }
 .technology .main-section .no-circle .circle:hover {
   border-color: #fff;
+  cursor: pointer;
 }
 .technology .main-section .text {
   flex-direction: column;

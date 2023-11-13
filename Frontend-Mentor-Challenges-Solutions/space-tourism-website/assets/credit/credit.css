@@ -135,6 +135,7 @@ ul li {
 }
 ul li:hover {
   border-color: gray;
+  cursor: pointer;
 }
 
 .container {
