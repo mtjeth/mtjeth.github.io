@@ -56,7 +56,7 @@ h4 {
 h5 {
   font-size: 28px;
   font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
-  color: #000;
+  color: #D0D6F9;
   letter-spacing: 4.75px;
   margin: 0;
   font-weight: 400;
@@ -78,7 +78,7 @@ h5 {
 .sh2 {
   font-size: 14px;
   font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
-  color: #000;
+  color: #D0D6F9;
   letter-spacing: 2.35px;
   margin: 0;
   font-weight: 400;
@@ -88,7 +88,7 @@ h5 {
 .sh-3 {
   font-size: 16px;
   font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
-  color: #000;
+  color: #D0D6F9;
   letter-spacing: 2.7px;
   margin: 0;
   font-weight: 400;
@@ -114,7 +114,7 @@ a {
 p {
   font-size: 18px;
   font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
-  color: #000;
+  color: #D0D6F9;
   letter-spacing: 1px;
   margin: 0;
   font-weight: 400;
@@ -356,7 +356,7 @@ html {
   padding-bottom: 14px;
 }
 .destination ul li a {
-  color: #000;
+  color: #D0D6F9;
 }
 .destination .break {
   background-color: rgba(255, 255, 255, 0.25);
